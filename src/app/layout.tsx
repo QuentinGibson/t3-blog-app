@@ -15,14 +15,16 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
+    <html lang="en" className={`${GeistSans.className}`}>
       <body>
         <Header />
-        <div className="flex w-full justify-center">
-          <main>{children}</main>
-          <aside>
+        <div className="flex flex-col min-h-screen">
+          <main className="flex-1 grid grid-cols-12 gap-6 p-6">
+            {children}
+          <aside className="col-span-4">
             <Aside />
           </aside>
+          </main>
         </div>
       </body>
     </html>

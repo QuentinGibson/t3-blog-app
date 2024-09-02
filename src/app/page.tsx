@@ -8,7 +8,11 @@ export default async function Page() {
   const client = createClient();
   const page = await client.getSingle("home");
 
-  return <SliceZone slices={page.data.slices} components={components} />;
+  return (
+    <div className="col-span-8 space-y-8" >
+      <SliceZone slices={page.data.slices} components={components} />
+    </div>
+  )
 }
 
 export async function generateMetadata(): Promise<Metadata> {
