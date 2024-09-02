@@ -1,0 +1,69 @@
+{
+  "id": "community",
+  "type": "SharedSlice",
+  "name": "Community",
+  "description": "Community",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "join_our_community": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Join Our Community",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "multi": "paragraph"
+          }
+        },
+        "cta_label": {
+          "type": "Text",
+          "config": {
+            "label": "CTA_label",
+            "placeholder": ""
+          }
+        },
+        "cta_link": {
+          "type": "Link",
+          "config": {
+            "label": "CTA Link",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "select": null
+          }
+        },
+        "sub_button_label": {
+          "type": "Text",
+          "config": {
+            "label": "Sub Button Label",
+            "placeholder": ""
+          }
+        },
+        "sub_button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Sub Button Link",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "select": null
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
