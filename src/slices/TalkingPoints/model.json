@@ -53,6 +53,15 @@
                   "allowTargetBlank": true,
                   "multi": "paragraph"
                 }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "link",
+                  "placeholder": "",
+                  "allowTargetBlank": false,
+                  "select": null
+                }
               }
             }
           }
